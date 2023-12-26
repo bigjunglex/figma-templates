@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    color: #6A859C;
+    line-height: 1.8;
+}
+
+.hide {
+    display: none !important;
+}
+
+.title-wrapper {
+    margin-bottom: 60px;
+}
+
+.title {
+    margin-bottom: 17px;
+    color: #676770;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #8E8E9C;
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.common-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.common-section--dark {
+    background-color: #192024;
+}
+
+.common-section--dark * {
+    color: #FFF;
+}
+
+.common-section--dark .subtitle {
+    color: #E8E8E8;
+}
+
+/* --------------------- HEADER ----------------------- */
+
+
+.header {
+    padding: 20px 0;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+
+    background-color: #FFF;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #69B9FF;
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.header__nav ul{
+    display: flex;
+    
+}
+
+.header__nav li + li {
+    margin-left: 40px;
+}
+
+.header__nav a {
+    color: #676770;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.header__nav a:hover {
+    color: #0082F3;
+}
+
+.header__nav a:hover {
+    color: #0065BD;
+}
+
+
+/* ------------------------- WELCOME ---------------- */
+
+.welcome {
+    min-height: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #FFFF;
+    text-align: center;
+    padding: 195px 0;
+
+
+    background-color: #252935;
+    background-image: url("./img/welcomebg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__title {
+    margin-bottom: 100px;
+
+    font-size: 59px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.welcome__links > * + * {
+    margin-left: 20px;
+}
+
+.link-primary {
+    display: inline-block;
+    padding: 11px 30px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    background-color: #69B9FF;
+    transition: background-color 0.3s;
+}
+
+.link-primary:hover {
+    background-color: #9BD0FF;
+}
+
+.link-primary:active {
+    background-color: #0080F0;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* ------------------------- ABOUT ( WHAT WE DO ) ---------------- */
+
+
+.about {
+
+}
+
+
+.about .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.about .card {
+    padding: 35px 15px 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #DCEBF7;
+}
+
+.about .card img {
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.about .card h4 {
+    margin-bottom: 15px;
+
+    color: #676770;
+    font-size: 20px;
+    line-height: 1.5; 
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+
+/* ------------------------- SERVICES ---------------- */
+
+.services {
+
+}
+
+.services .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services .card {
+    width: 45%;
+}
+
+.services .card img {
+    margin-bottom: 20px;
+}
+
+.services .card h4 {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.services .link { 
+    margin-top: 15px;
+}
