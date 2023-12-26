@@ -262,3 +262,81 @@ p {
 .services .link { 
     margin-top: 15px;
 }
+
+
+/* ------------------------- TAB SECTION ---------------- */
+
+
+.tab-section {
+
+}
+
+.tabs {
+
+}
+
+.tabs__nav {
+    margin-bottom: 50px;
+}
+
+.tabs__nav button {
+    padding: 0 30px;
+
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    border-radius: 4px;
+    background-color: #92A0AD;
+}
+
+.tabs__nav button.active {
+    background-color: #2E80B6;
+}
+
+.tabs__nav button + button {
+    margin-left: 15px;
+}
+
+.tabs__item img {
+    margin-bottom: 15px;
+}
+
+.tabs__item h4 {
+    margin-bottom: 15px;
+
+    color: #676770;
+    font-size: 31px;
+    line-height: 1.2; 
+}
+
+.tabs__des {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+
+/* ------------------------- FOOTER ---------------- */
+
+
+.footer {
+
+}
+.footer_desc {
+
+}
+
+.footer__about {
+
+}
+.footer__links {
+
+}
+.footer__social {
+
+}
+.footer_copy {
+
+}
