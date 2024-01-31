@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(./img/Norse-Bold.otf) format(woff2);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/* ---------------------------- LOGO SIDE */
+
+.background {
+    width: 80%;
+    background-image: url("./img/background-SF.png");
+    background-position: center;
+}
+
+.background__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+.background__logo-wrapper img {
+    height: 100px;
+    margin-right: 15px;
+}
+
+
+.logo {
+    font-family: 'Norse-Bold';
+    color: #fff;
+    font-size: 70px;
+}
+
+/* ------------------------------ FORM SIDE ------------------------- */
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, #1DAC92 0%, #1DAC92 0.01%, #228E8E 100%);
+    padding: 30px;
+}
+
