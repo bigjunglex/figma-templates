@@ -8,6 +8,10 @@
     src: url(./img/Norse-Bold.otf) format(woff2);
 }
 
+/* html, body {
+    overflow-x: hidden;
+} */
+
 body {
     display: flex;
     height: 100vh;
@@ -16,7 +20,7 @@ body {
 /* ---------------------------- LOGO SIDE */
 
 .background {
-    width: 80%;
+    width: 100%;
     background-image: url("./img/background-SF.png");
     background-position: center;
 }
@@ -25,8 +29,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    width: 100%;
+    margin-top: 200px;
+    /* width: 100%; */
     background-color: rgb(0, 0, 0, 0.5);
     padding: 10px 0;
 }
@@ -48,8 +52,12 @@ body {
 .form-side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(180deg, #1DAC92 0%, #1DAC92 0.01%, #228E8E 100%);
-    padding: 30px;
+    background-color: #f9fafb;
+}
+
+.header,
+.main,
+.footer {
+    flex: 1;
 }
 
