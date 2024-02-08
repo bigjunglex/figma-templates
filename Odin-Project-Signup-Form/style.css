@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none
 }
 
 @font-face {
@@ -17,7 +18,13 @@ body {
     height: 100vh;
 }
 
-/* ---------------------------- LOGO SIDE */
+a:focus, a:active {
+    outline: none;
+}
+
+
+
+/* ---------------------------- LOGO SIDE -------------*/
 
 .background {
     width: 100%;
@@ -59,5 +66,145 @@ body {
 .main,
 .footer {
     flex: 1;
+    padding-left: 40px;
+    font-family: monospace;
+    
+}
+
+h2 + h2 {
+    padding-bottom: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    
+}
+
+.main__fieldset {
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.form-element {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.input-element {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.legend {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+input {
+    height: 22px;
+    border: 1px solid #E5E7EB;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+input:focus {
+    border: 1px solid #5784de;
+    box-shadow: 1px 1px 2px 1px rgba(114, 146, 218, 0.3);
+    
+}
+
+.error {
+    border: 1px solid rgb(218, 34, 34);
+}
+
+form {
+    height: 100%;
+    width: auto;
+}
+
+
+/* --------------------- FOOTER ---------------------------- */
+
+.footer {
+    display:  flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+}
+
+
+.create-account {
+    margin-top: 3%;
+    background-color: #596D48;
+    color: #fff;
+    padding: 15px 55px;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 15px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.create-account:hover {
+    background-color:  #72b336;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.create-account:active {
+    background-color: #367c00;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.log-in {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.log-in a {
+    outline: none;
+    text-decoration: none;
+    font-weight: 900;
+    color: #596D48;
+    transition: color 0.3s;
+}
+
+
+.log-in a:hover {
+    color: #72b336;
+}
+
+
+.log-in a:active {
+    color: #367c00;
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer   ></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -19,56 +20,59 @@
             <h2>You <em>know</em> you want to</h2>
         </header>
         <main class="main">
-            <fieldset class="main__fieldset">
-                <legend class="legend"> Let's do this!</legend>
-                
-                <div class="form-element">
-                    <div class="input-element">
-                        <label for="first-name">first name</label>
-                        <input type="text" name="first-name" id="first name" placeholder="Zorbrogz">
+            <form action="#!" method="post" id="creation">
+
+                <fieldset class="main__fieldset">
+                    <legend class="legend"> Let's do this!</legend>
+                    
+                    <div class="form-element">
+                        <div class="input-element">
+                            <label for="first-name">first name</label>
+                            <input type="text" name="first-name" id="first name" placeholder="Zorbrogz">
+                        </div>
+                        
+                        <div class="input-element">
+                            <label for="last-name">last name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Grossjungleson">
+                        </div>
                     </div>
                     
-                    <div class="input-element">
-                        <label for="last-name">last name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Grossjungleson">
-                    </div>
-                </div>
-                
-                <div class="form-element">
-                    <div class="input-element">
-
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email" placeholder="your@email.com">
-                    </div>
-                    
-                    <div class="input-element">
-
-                        <label for="phone-number">phone number</label>
-                        <input type="text" name="phone-number" id="phone-number" placeholder="+7(978)999 99 99">
-                    </div>
-                </div>
-                
-                <div class="form-element">
-                    <div class="input-element">
-
-                        <label for="password">password</label>
-                        <input type="password" name="password" id="password">
+                    <div class="form-element">
+                        <div class="input-element">
+                            
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="input-element">
+                            
+                            <label for="phone-number">phone number</label>
+                            <input type="text" name="phone-number" id="phone-number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" placeholder="+7(978)999 99 99">
+                        </div>
                     </div>
                     
-                    <div class="input-element">
-
-                        <label for="confirm-password">confirm password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                    <div class="form-element">
+                        <div class="input-element">
+                            
+                            <label for="password">password</label>
+                            <input class="error" type="password" name="password" id="password" placeholder="******">
+                        </div>
+                        
+                        <div class="input-element">
+                            
+                            <label for="confirm-password">confirm password</label>
+                            <input class="error" type="password" name="confirm-password" id="confirm-password" placeholder="******">
+                        </div>
                     </div>
+                </fieldset>
+            </form>
+            </main>
+            <footer class="footer">
+                <button class="create-account" id="submit">Create Account</button>
+                <div class="log-in">
+                    <p>Already have an account?</p>
+                    <a href="#!">Log In</a>
                 </div>
-        </fieldset>
-    </main>
-    <footer class="footer">
-        <button class="create-account">Create Account</button>
-        <div class="log-in">
-            <p>Already have an account?</p>
-            <a href="#!">Log In</a>
-    </footer>
-</div>
-</body>
+            </footer>
+    </body>
 </html>
