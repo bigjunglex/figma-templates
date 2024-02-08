@@ -208,3 +208,6 @@ form {
     color: #367c00;
 }
 
+.correct {
+    border: 2px solid rgb(42, 196, 119);
+}
