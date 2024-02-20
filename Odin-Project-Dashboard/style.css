@@ -75,19 +75,19 @@ li img {
     padding-bottom: 0;
 }
 
+.nav  {
+    grid-row: 2 / 4 ;
+}
 
-/*-----------------------------*/
+/*-------------- HEADER   ---------------*/
 
 
 
 .header {
     background-color: #ffffff;
+    display: grid;
 }
 
 .dashboard {
     background-color: #e1e8f0;
-}
-
-.nav  {
-    grid-row: 2 / 4 ;
 }
